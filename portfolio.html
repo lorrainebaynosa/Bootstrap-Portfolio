@@ -9,11 +9,150 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <style type=text/css> 
-   
-    /* CSS for portfolio form */
-
-    .img1, .img2, .img3, .img4, .img5 {
+ 
+   <style type=text/css> 
+  
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  
+  h1 {background: #4aaaa5;} 
+  h2 {color: #4aaaa5;} 
+  
+  body {
+      background: #EEEEEE;
+      background-image: url(images/xv.png); 
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 34px;
+      color: #777777;
+  }
+  
+  header {
+      background: #ffffff;
+      overflow: hidden;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border-bottom-width: medium;
+      border-bottom-style: solid;
+      border-color: #cccccc;
+      width: 100%;
+  }
+  
+  .Lorraine {
+      display: in-line block;
+      flex: left;
+      margin-left: 0 px;
+      background: #4aaaa5;
+      color: #ffffff;
+      padding: 20px;
+  }
+  
+  nav {
+      display: block;
+      float: right;
+      line-height: 70px;
+      margin-right: 265px;
+  }
+  
+  nav li {
+      display: inline-block;
+      padding: 5px 10px;
+      margin-right: 0px;
+      line-height: normal;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  ul {
+      margin: 0; 
+      padding: 0;
+      list-style-type: none;
+  }
+  
+  li {
+      display: in-line block;
+      border-radius: 3px;
+      padding: 2px;
+      margin-left: 20px;
+  }
+  
+  .container {
+      background: #ffffff;
+      border-color: #dddddd;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #777777;
+      max-width: 960px;
+      margin: 30px 250px 0px 250px; 
+      padding: 20px;
+      height: 500px;
+      overflow: auto;
+  }
+  
+  p {
+      text-align: left;
+      font-size: 20px;
+      line-height: 38px;
+  }
+  
+  .h2 {
+      border-bottom-width: medium;
+      border-bottom-width: length 920px;
+      border-bottom-style: solid;
+      border-bottom-color: #dddddd;
+      margin-bottom: 20px;
+      margin-left: 5px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #4aaaa5;
+      padding: 10px 0px 20px 0px;
+  }
+  
+  .clearfix ::after {
+      content: " ";
+      clear: both; 
+      display: table;
+  }
+  
+  html, body {
+      height: 100%;
+  }
+  
+  #container {
+      min-height: 100%;
+      margin-bottom: -60px;
+  }
+  
+  #container:after {
+      content: "";
+      display: block;
+  }
+  
+  .footer {
+      background: #666666;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 3px;
+      color: #777777;
+      border-top-width: thick;
+      border-top-style: solid;
+      border-top-color: #4aaaa5;
+      height: 60px;
+      align-items: center;
+      text-align: justify;
+  }
+  
+  .footer_contents {
+      padding: 20px 45% 0px 45%;
+  }
+  
+  html, body {
+      height: 100%;
+      margin: 0;
+  }
+  .img1, .img2, .img3, .img4, .img5 {
         width: 270px;
         height: 150px;
     }
@@ -35,7 +174,7 @@
         margin-right: 200px;
     }
     
-    .box1, .box2, .box3, .box4, .box5 {
+    .col-md-4 img1, .col-md-4 img2, .col-md-4 img3, .col-md-4 img4, .col-md-4 img5 {
         position: relative;
     }
     
@@ -60,7 +199,6 @@
         padding: 10px 0px;
         text-align: center;
         top: 110px;
-        left: 310px;
         width: 270px;
     }
     
@@ -72,7 +210,7 @@
         font-family: Arial, Helvetica, sans-serif;
         padding: 10px 0px;
         text-align: center;
-        top: 290px;
+        top: 110px;
         width: 270px;
     }
     
@@ -84,8 +222,7 @@
         font-family: Arial, Helvetica, sans-serif;
         padding: 10px 0px;
         text-align: center;
-        top: 290px;
-        left: 310px;
+        top: 110px;
         width: 270px;
     }
     
@@ -97,40 +234,41 @@
         font-family: Arial, Helvetica, sans-serif;
         padding: 10px 0px;
         text-align: center;
-        top: 470px;
+        top: 110px;
         width: 270px;
     }
     </style> 
     <title>Portfolio</title>
 </head>
-
-<!--Navigation -->
-<header>
+  
+  <!--Navigation -->
+  <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-            <div class="Lorraine">Lorraine Baynosa
-                <a class="navbar-brand text-display-4 text-white">Lorraine Baynosa</a>
+            <div class="Lorraine"><h1>Lorraine Baynosa</h1>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link text-decoration-none" href="#">About <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-decoration-none" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-decoration-none" href="#">Contact</a>
-                    </li>
-                </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-decoration-none" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-decoration-none" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-decoration-none" href="#">Contact</a>
+                </li>
+              </ul>
             </div>
+          </div>
+          </div>
+          </div>
         </nav>
-</header>
-<!--end of Navigation -->
+    </header>
+    <!--end of Navigation -->
 
 <!-- Start of Main Content"-->
     <div id="main container" class="container">
@@ -140,28 +278,28 @@
                     <h2 class="h2 border-bottom font-weight-bold">Portfolio</h2>
                 </div>
             </div>    
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row justify-content-start">
+                <div class="col-md-4 img1">
                     <img class="img1 float-left" src="images/flowers.jpg" alt="flowers">
                     <div class="flowers">Flowers</div>
                 </div>
-                <div class="col-md4">
+                <div class="col-md4 img2">
                     <img class="img2 float-left" src="images/ocean.jpg" alt="ocean">
                     <div class="ocean">Ocean</div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row justify-content-start">
+                <div class="col-md-4 img3">
                     <img class="img3 float-left" src="images/sunset.jpg" alt="sunset">
                     <div class="sunset">Sunset</div>
                 </div>
-                <div class="col-md-4"> 
+                <div class="col-md-4 img4"> 
                     <img class="img4 float-left" src="images/fashion.jpg" alt="fashion">
                     <div class="fashion">Fashion</div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-14">
+            <div class="row justify-content-start">
+                <div class="col-md-4 img5">
                     <img class="img5 float-left" src="images/dog.jpg" alt="puppy">
                     <div class="puppy">Puppy</div>
                 </div>
