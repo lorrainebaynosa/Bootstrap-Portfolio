@@ -5,33 +5,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-    .content-portfolio {
-        background: #ffffff;
-        border-color: #dddddd;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #777777;
-        max-width: 960px;
-        margin: 15px 250px 0px 250px; 
-        padding: 20px;
-        height: 600px;
-        overflow: auto;
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <style type=text/css> 
+   
+    /* CSS for portfolio form */
+
+    .img1, .img2, .img3, .img4, .img5 {
+        width: 270px;
+        height: 150px;
     }
-    </style>
+    
+    .img1, .img3 {
+        margin-right: 40px;
+    }
+    
+    .img1, .img2 {
+        margin-top: 5px;
+    }
+    
+    .img1, .img2, .img3, .img4, .img5 {
+        float: left;
+        margin-bottom: 30px;
+    }
+    
+    .img2, .img4 {
+        margin-right: 200px;
+    }
+    
+    .box1, .box2, .box3, .box4, .box5 {
+        position: relative;
+    }
+    
+    .flowers {
+        position: absolute;
+        display: block;
+        background: #4aaaa5;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 0px;
+        text-align: center;
+        top: 110px;
+        width: 270px;
+    }
+    
+    .ocean {
+        position: absolute;
+        display: block;
+        background: #4aaaa5;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 0px;
+        text-align: center;
+        top: 110px;
+        left: 310px;
+        width: 270px;
+    }
+    
+    .sunset {
+        position: absolute;
+        display: block;
+        background: #4aaaa5;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 0px;
+        text-align: center;
+        top: 290px;
+        width: 270px;
+    }
+    
+    .fashion {
+        position: absolute;
+        display: block;
+        background: #4aaaa5;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 0px;
+        text-align: center;
+        top: 290px;
+        left: 310px;
+        width: 270px;
+    }
+    
+    .puppy {
+        position: absolute;
+        display: block;
+        background: #4aaaa5;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 0px;
+        text-align: center;
+        top: 470px;
+        width: 270px;
+    }
+    </style> 
+    <title>Portfolio</title>
 </head>
 
-<body>
-    <p>Images in Bootstrap are made responsive with .img-fluid. max-width: 100%; and height: auto; are applied to the
-        image so that it scales with the parent element.
-    </p>
-    <br>
-    <p>
-        <img src="..." class="img-fluid" alt="Responsive image">
-        
-    </p>
+<!--Navigation -->
+<header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div class="Lorraine">Lorraine Baynosa
+                <a class="navbar-brand text-display-4 text-white">Lorraine Baynosa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-decoration-none" href="#">About <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+<!--end of Navigation -->
 
+<!-- Start of Main Content"-->
+    <div id="main container" class="container">
+        <section class="main-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="h2 border-bottom font-weight-bold">Portfolio</h2>
+                </div>
+            </div>    
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img1 float-left" src="images/flowers.jpg" alt="flowers">
+                    <div class="flowers">Flowers</div>
+                </div>
+                <div class="col-md4">
+                    <img class="img2 float-left" src="images/ocean.jpg" alt="ocean">
+                    <div class="ocean">Ocean</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img3 float-left" src="images/sunset.jpg" alt="sunset">
+                    <div class="sunset">Sunset</div>
+                </div>
+                <div class="col-md-4"> 
+                    <img class="img4 float-left" src="images/fashion.jpg" alt="fashion">
+                    <div class="fashion">Fashion</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-14">
+                    <img class="img5 float-left" src="images/dog.jpg" alt="puppy">
+                    <div class="puppy">Puppy</div>
+                </div>
+            </div>    
+        </section>
+    </div>
 
+<footer>
+    <div class="footer">
+        <div class="footer_contents">
+            <p>Copyright ©</p>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
